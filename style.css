@@ -1,0 +1,39 @@
+.carte{
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px 40px 40px 40px;
+    }
+
+
+.bodytext{
+    display: inline-block;
+    align-self: flex-end;
+    padding-bottom:10px;
+    background-color: rgba(10, 10, 10, 0.2);
+    border-radius: 40px 40px 40px 40px;
+}
+
+.cartesingle{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:1750px;
+    height:1000px;
+    margin:100px;
+}
+.bgall{
+    background-image:url('https://i.pinimg.com/originals/fe/cc/20/fecc20eaa5617052dcb26d3834658960.gif');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.gigadiv{
+    margin-top:100px;
+}
+.singleimg{
+    height:800px;
+    background-size: cover;
+    border-radius: 40px 40px 40px 40px;
+}
+.fontsize{
+    font-size:28px;
+}
