@@ -6,7 +6,10 @@ $id=$_GET['id'];
 
 require 'function.php';
 $resultid=getArticleById($id);
-require 'header.php';
+$categories=getCategories();
+$categories2=getArticlesByCategory2($id);
+require 'header1.php';
+require 'header2.php';
 
 ?>
 
@@ -35,7 +38,27 @@ require 'header.php';
                 <div class="fontsize">
                     <?php echo $resultid['content'] ?>
                 </div>
-                <div class="text-center">
+                <div class="my-4"><?php foreach($categories2 as $categorie2){ ?>
+                    <a class="btn btn-primary" href="categories.php?category=<?php echo $categorie2['category'] ?>"><?php echo $categorie2['category'] ?></a>
+                <?php } ?></div>
+                
+
+                <?php if(isset($_SESSION['id'])){ if($resultid['auteur_id']==$_SESSION['id']){ ?>
+                <div class="row">
+                    <div class="offset-3 col-3">
+                        <div class="my-2 text-center">
+                            <a class="btn btn-primary" href="singlemodif.php?id=<?php echo $id ?>">Modifier</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="my-2 text-center">
+                            <a id="btnsuppress<?php echo $id ?>" class="btnsuppress btn btn-danger">Supprimer</a>
+                        </div>
+                    </div>
+                </div>
+                <?php }} ?>
+
+                <div class="my-4 text-center">
                     <a href="index.php">Menu</a>
                 </div>
             </div>
