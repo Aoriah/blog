@@ -10,8 +10,9 @@
     display: inline-block;
     align-self: flex-end;
     padding-bottom:10px;
-    background-color: rgba(10, 10, 10, 0.2);
+    background-color: rgba(10, 10, 10, 0.5);
     border-radius: 40px 40px 40px 40px;
+    color: lightcoral;
 }
 
 .cartesingle{
@@ -22,9 +23,10 @@
     margin:100px;
 }
 .bgall{
-    background-image:url('https://i.pinimg.com/originals/fe/cc/20/fecc20eaa5617052dcb26d3834658960.gif');
+    background-image:url('https://media4.giphy.com/media/ovWn8N8TVg8hi/giphy.gif?cid=ecf05e4712q34z8fa8d795xchds2fqj3pqgqorn4fx419lfc&rid=giphy.gif&ct=g');
     background-repeat:no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .gigadiv{
     margin-top:100px;
@@ -59,4 +61,42 @@
 }
 .unpeuplusgros{
     font-size: 25px;
+}
+
+
+.aa{
+    text-decoration: none;
+    color: black;
+}
+.suggesttitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+.bggristransparent{
+    background-color: rgba(220, 220, 220, 0.2)!important;
+     
+}
+.suggestbg{
+    background-color: rgba(252, 126, 235, 0.8)!important;
+}
+
+.getborders{
+    border-radius: 100px!important;
+}
+.title{
+    font-size: 25px;
+}
+.lightpink{
+    color: lightpink;
+}
+.notimportant{
+    font-size: 20px;
+}
+.title2{
+    font-size: 70px;
+}
+
+.arrondi{
+    border-radius: 40px;
 }

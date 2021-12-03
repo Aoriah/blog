@@ -30,6 +30,7 @@ $petit=$we["petit"];
 $src=$we["image"];
 $auteurid=$_SESSION['id'];
 
+
 //if(!empty($name) and !empty($auteur) and !empty($description) and !empty($petit) and !empty($src)){
     addtotable($we, $name, $description, $petit, $src, $auteurid);
 //}

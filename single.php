@@ -21,10 +21,15 @@ require 'header2.php';
                 </div>
             </div>
             <div class="col-6 display-6">
-                <div class="title text-center display-5 fw-bold text-primary">
+                <div class="title2 text-center my-4 display-5 fw-bold text-primary">
                     <?php echo $resultid['title'] ?>
                 </div>
-                <div class="mx-3 my-3 fw-bold text-center"> 
+                
+                <div class="fontsize">
+                    <?php echo $resultid['content'] ?>
+                </div>
+
+                <div class="my-3 fw-bold text-center"> 
                     <div class="row">
                         <div class="col-6">
                             <?php $pseudo=getAuteur($id);
@@ -35,11 +40,9 @@ require 'header2.php';
                         </div>
                     </div>
                 </div>
-                <div class="fontsize">
-                    <?php echo $resultid['content'] ?>
-                </div>
+
                 <div class="my-4"><?php foreach($categories2 as $categorie2){ ?>
-                    <a class="btn btn-primary" href="categories.php?category=<?php echo $categorie2['category'] ?>"><?php echo $categorie2['category'] ?></a>
+                    <a class="btn btn-primary arrondi" href="categories.php?category=<?php echo $categorie2['category'] ?>"><?php echo $categorie2['category'] ?></a>
                 <?php } ?></div>
                 
 
@@ -47,7 +50,7 @@ require 'header2.php';
                 <div class="row">
                     <div class="offset-3 col-3">
                         <div class="my-2 text-center">
-                            <a class="btn btn-primary" href="singlemodif.php?id=<?php echo $id ?>">Modifier</a>
+                            <a class="btn btn-warning" href="singlemodif.php?id=<?php echo $id ?>">Modifier</a>
                         </div>
                     </div>
                     <div class="col-3">
@@ -58,8 +61,9 @@ require 'header2.php';
                 </div>
                 <?php }} ?>
 
-                <div class="my-4 text-center">
-                    <a href="index.php">Menu</a>
+                <div class="my-5 text-center">
+                    <a class="pt-2 px-4 btn btn-outline-secondary" href="index.php"><img width="50px"src="https://cdn-icons-png.flaticon.com/512/25/25694.png"></br><p class="p-0 m-0 text-black fw-bold">
+                    Menu</p></a>
                 </div>
             </div>
         </div>

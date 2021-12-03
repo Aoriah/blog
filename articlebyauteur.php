@@ -37,7 +37,10 @@ require 'header2.php';
                 </div>
             </div>
         <?php } ?>
-
+        <div class="my-5 text-center">
+            <a class="pt-2 px-4 btn btn-outline-secondary" href="index.php"><img width="50px"src="https://cdn-icons-png.flaticon.com/512/25/25694.png"></br><p class="p-0 m-0 text-black fw-bold">
+            Menu</p></a>
+        </div>
     </div>
 </div>
 

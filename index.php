@@ -9,6 +9,22 @@ require 'header1.php';
 require 'header2.php';
 ?>
 
+<div class="row">
+    <div class="position-fixed col-4 offset-4">
+        <div class="search">
+            <input class="text-center arrondi fw-bold" style="width:580px; height:50px;" id="search" name="search" value="Recherchez votre anime préféré" type="text">
+        </div>
+        <div class="getborders" style="overflow-x:hidden; overflow-y: auto; height:200px;">
+            
+                <?php foreach($articles as $article){ ?>
+                    <div class="suggestbg">
+                        <a href="single.php?id=<?php echo $article["id"] ?>" hidden class="aa suggest<?php echo $article["id"] ?> bgtrans"></a>
+                    </div>
+                <?php } ?>
+            
+        </div>
+    </div>
+</div>
 
 
 
@@ -21,19 +37,22 @@ require 'header2.php';
                     <div class="title">
                         <?php echo $article['title'] ?>
                     </div>
+
+                    <div class="lightpink petitcomment">
+                        <?php echo $article['petit'] ?>
+                    </div>
+
                     <div class="row">
-                        <div class="col-6 auteur">
+                        <div class="text-danger notimportant col-6 auteur">
                             <?php $id=$article['id'];
                             $pseudo=getAuteur($id);
                             echo $pseudo['pseudo'] ?>
                         </div>
-                        <div class="col-6 date">
+                        <div class="text-danger notimportant col-6 date">
                             <?php echo $article['date de publication'] ?>
                         </div>
                     </div>
-                    <div class="petitcomment">
-                        <?php echo $article['petit'] ?>
-                    </div>
+
                     <div class="bouton">
                         <a href="single.php?id=<?php echo $article['id'] ?>" class="btn btn-primary">Voir Plot</a>
                     </div>
@@ -43,7 +62,12 @@ require 'header2.php';
 
     </div>
     <!-- FORMULAIRE D'AJOUT-->
+    <?php if (!$_SESSION){ ?>
     <div><p class="display-6 text-danger text-center">CONNECTEZ-VOUS POUR AJOUTER UN ANIME</p>
+    <?php } ?>
+    <?php if ($_SESSION){ ?>
+    <div><p class="display-6 text-danger text-center">REMPLISSEZ LES CHAMPS POUR AJOUTER UN ANIME POUR AJOUTER UN ANIME</p>
+    <?php } ?>
     <?php if ($_SESSION){ ?>
         <form name="add" method="post" action="traitement.php" enctype='multipart/form-data'>
             <div>             
