@@ -37,7 +37,7 @@
     border-radius: 40px 40px 40px 40px;
 }
 .fontsize{
-    font-size:28px;
+    font-size:80%;
 }
 .alert{
     text-decoration: underline red;
@@ -49,18 +49,18 @@
 }
 
 .text-15{
-    font-size:15px;
+    font-size:40%;
     font-weight: bold;
 }
 
 .bgfixe{
     position:fixed;
-    font-size: 25px;
+    font-size: 75%;
     font-weight: bold;
     background-color:rgb(144, 238, 144); 
 }
 .unpeuplusgros{
-    font-size: 25px;
+    font-size: 75%;
 }
 
 
@@ -69,7 +69,7 @@
     color: black;
 }
 .suggesttitle{
-    font-size: 30px;
+    font-size: 85%;
     font-weight: bold;
     color: red;
 }
@@ -85,18 +85,28 @@
     border-radius: 100px!important;
 }
 .title{
-    font-size: 25px;
+    font-size: 136%;
 }
 .lightpink{
     color: lightpink;
 }
 .notimportant{
-    font-size: 20px;
+    font-size: 125%;
 }
 .title2{
-    font-size: 70px;
+    font-size: 320%;
 }
 
 .arrondi{
     border-radius: 40px;
+}
+
+.espacecomment{
+    border: solid black 1px;
+    padding: 10px;
+    background-color: rgba(220, 220, 220, 0.5)!important;
+}
+
+.textsize35{
+    font-size: 200%;
 }

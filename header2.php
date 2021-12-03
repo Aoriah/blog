@@ -1,7 +1,7 @@
 
-		<div class="row">
+		<div style="width:100%;" class="row">
 			<div class="col-1">
-				<div class="dropdown d-inline">
+				<div class="dropdown">
 					<button class="btn btn-secondary position-fixed dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 						Categories
 					</button>
@@ -61,8 +61,8 @@
 			<?php } ?>
 			
 			<?php if($_SESSION){?>
-				<div class="col-1 offset-11 position-fixed">
-					<div class="dropdown text-end">
+				<div class="offset-11 d-flex flex-row-reverse col-1 position-fixed">
+					<div class="dropdown">
 						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><?php echo $_SESSION['pseudo'] ?></button>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
 							<li><a class="dropdown-item" href="deco.php?">Deconnexion</a></li>

@@ -13,7 +13,7 @@ require 'header2.php';
     <div class="row">
 
         <?php foreach($articles as $article){?>
-            <div class="d-flex col-3 my-5 mx-5 carte" style="background-image:url('<?php echo $article['image'] ?>')">
+            <div class="d-flex my-sm-3 col-sm-10 col-md-4 offset-1 col-lg-3 carte" style="background-image:url('<?php echo $article['image'] ?>')">
                 <div class="bodytext fw-bold text-center"> 
                     <div class="title">
                         <?php echo $article['title'] ?>

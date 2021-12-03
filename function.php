@@ -78,3 +78,9 @@ function getArticlesByAuteur(){
     return $results;
 }
 
+function getCommentsById($id){
+    $db=connection();
+    $article=$db->query('SELECT contenu, commentaires.id, pseudo, commentaires.`date de publication` FROM commentaires INNER JOIN articles ON articles.id=commentaires.article_id WHERE articles.id='.$id.'');
+    $pseudo=$article->fetchAll(PDO::FETCH_ASSOC);
+    return $pseudo;
+}

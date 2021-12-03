@@ -12,7 +12,7 @@ require 'header2.php';
 <div class="row">
     <div class="position-fixed col-4 offset-4">
         <div class="search">
-            <input class="text-center arrondi fw-bold" style="width:580px; height:50px;" id="search" name="search" value="Recherchez votre anime préféré" type="text">
+            <input class="text-center arrondi fw-bold" style="width:100%; height:50px;" id="search" name="search" value="Recherchez votre anime préféré" type="text">
         </div>
         <div class="getborders" style="overflow-x:hidden; overflow-y: auto; height:200px;">
             
@@ -32,7 +32,7 @@ require 'header2.php';
     <div class="row">
 
         <?php foreach($articles as $article){ ?>
-            <div class="d-flex col-3 my-5 mx-5 carte" style="background-image:url('<?php echo $article['image'] ?>')">
+            <div class="d-flex my-sm-3 col-sm-10 col-md-4 offset-1 col-lg-3 carte" style="background-image:url('<?php echo $article['image'] ?>')">
                 <div class="bodytext fw-bold text-center"> 
                     <div class="title">
                         <?php echo $article['title'] ?>
@@ -103,7 +103,9 @@ require 'header2.php';
 
             <div>             
                 <label for="content">Commentaire</label>
-                <input value="" id="content" class="mt-2 mb-2" type="text" name="content">
+                <div class="row">
+                    <input style="height:100px;" value="" id="content" class="mt-2 mb-2" type="text" name="content">
+                </div>
             </div>
             <!--<div>             
                 <label for="date de publication">Date</label>
