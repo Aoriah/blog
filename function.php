@@ -47,7 +47,7 @@ function getArticlesByCategory2($id){
     $results=$articles->fetchAll(PDO::FETCH_ASSOC);
     return $results;
 }
-
+ 
 function compcat($id, $catid){
     $db=connection();
     $articles=$db->query('SELECT *  FROM categories_articles

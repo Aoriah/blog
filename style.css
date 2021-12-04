@@ -116,3 +116,19 @@
     border-radius: 40px;
     background-color: rgba(252, 126, 235, 0.4);
 }
+
+.haut-gauche{
+    top:0px!important; left:0px!important;
+    position:fixed!important;
+}
+.haut-droite{
+    top:0px!important; right:0px!important;
+    position:fixed!important;
+}
+.be:hover {
+        color: #1e2125!important;
+        background-color: #e9ecef!important;
+}
+.be{
+    color:#1e2125!important;
+}

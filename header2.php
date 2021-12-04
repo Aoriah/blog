@@ -1,8 +1,8 @@
 
-		<div style="width:100%;" class="row">
-			<div class="col-1">
+		
+			<div>
 				<div class="dropdown">
-					<button class="btn btn-secondary position-fixed dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					<button class="haut-gauche btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 						Categories
 					</button>
 					<ul class="dropdown-menu bggristransparent" aria-labelledby="dropdownMenuButton1">
@@ -15,8 +15,8 @@
 
 
 			<?php if(!$_SESSION){ ?>
-				<div class="col-1 offset-11 dropdown position-fixed d-inline">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+				<div>
+					<button class="haut-droite btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
 						Connexion
 					</button>
 					<ul class="bggristransparent dropdown-menu" aria-labelledby="dropdownMenuButton3">
@@ -61,14 +61,17 @@
 			<?php } ?>
 			
 			<?php if($_SESSION){?>
-				<div class="offset-11 d-flex flex-row-reverse col-1 position-fixed">
+				<div>
 					<div class="dropdown">
-						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><?php echo $_SESSION['pseudo'] ?></button>
+						<button class="haut-droite btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><?php echo $_SESSION['pseudo'] ?></button>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
 							<li><a class="dropdown-item" href="deco.php?">Deconnexion</a></li>
 							<li><a class="dropdown-item" href="articlebyauteur.php?">Articles</a></li>
+							<li class="nav-item">
+								<a class="dropdown-item be bg-white" href="#scrollspyHeading1">Ajouter un post</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			<?php } ?>
-		</div>
+		

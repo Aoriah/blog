@@ -69,18 +69,27 @@ require 'header2.php';
     <div><p class="display-6 text-danger text-center">REMPLISSEZ LES CHAMPS POUR AJOUTER UN ANIME POUR AJOUTER UN ANIME</p>
     <?php } ?>
     <?php if ($_SESSION){ ?>
-        <form name="add" method="post" action="traitement.php" enctype='multipart/form-data'>
-            <div>             
+        <form id="scrollspyHeading1" name="add" method="post" action="traitement.php" enctype='multipart/form-data'>
+            
+            <div class="row">             
                 <label for="title">Titre</label>
-                <input value="" id="title" class="mt-2 mb-2" type="text" name="title">
+                <div class="col-4">
+                    <input value="" id="title" class="mt-2 mb-2" type="text" name="title">
+                </div>
             </div>
-            <div>             
+            
+            <div class="row">             
                 <label for="image">Chemin de l'image:</label>
-                <input value="" id="image" class="mt-2 mb-2" type="text" name="image">
+                <div class="col-6">
+                    <input value="" id="image" class="mt-2 mb-2" type="text" name="image">
+                </div>
             </div>
-            <div>             
+            
+            <div class="row">             
                 <label for="petit">Synthèse</label>
-                <input value="" id="petit" class="mt-2 mb-2" type="text" name="petit">
+                <div class="col-6">
+                    <input value="" id="petit" class="mt-2 mb-2" type="text" name="petit">
+                </div>
             </div>
 
             <div>
