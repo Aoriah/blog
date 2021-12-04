@@ -73,22 +73,22 @@ require 'header2.php';
             
             <div class="row">             
                 <label for="title">Titre</label>
-                <div class="col-4">
-                    <input value="" id="title" class="mt-2 mb-2" type="text" name="title">
+                <div>
+                    <input style="width:35%; height:40px;" value="" id="title" class="mt-2 mb-2 bg-input" type="text" name="title">
                 </div>
             </div>
             
             <div class="row">             
                 <label for="image">Chemin de l'image:</label>
-                <div class="col-6">
-                    <input value="" id="image" class="mt-2 mb-2" type="text" name="image">
+                <div>
+                    <input style="width:50%; height:40px;" value="" id="image" class="mt-2 mb-2 bg-input" type="text" name="image">
                 </div>
             </div>
             
             <div class="row">             
                 <label for="petit">Synthèse</label>
-                <div class="col-6">
-                    <input value="" id="petit" class="mt-2 mb-2" type="text" name="petit">
+                <div>
+                    <input style="width:50%; height:40px;" value="" id="petit" class="mt-2 mb-2 bg-input" type="text" name="petit">
                 </div>
             </div>
 
@@ -104,7 +104,7 @@ require 'header2.php';
                     <?php } ?>
                     <div class="col-4">
                         <label for="addcategory">Autre catégorie</label>
-                        <input id="addcategory" value="" class="mt-2 mb-2 type" type="text" name="addcategory">
+                        <input id="addcategory" value="" class="mt-2 mb-2 type bg-input" type="text" name="addcategory">
                         <button class="btn btn-primary" value="" id="btncategory" name="btncategory">Ajouter</button>
                     </div>
                 </div>
@@ -113,7 +113,7 @@ require 'header2.php';
             <div>             
                 <label for="content">Commentaire</label>
                 <div class="row">
-                    <input style="height:100px;" value="" id="content" class="mt-2 mb-2" type="text" name="content">
+                    <input style="height:100px;" value="" id="content" class="mt-2 mb-2 bg-input" type="text" name="content">
                 </div>
             </div>
             <!--<div>             
